@@ -3,6 +3,7 @@ package Array_Questions;
 import java.util.Arrays;
 
 public class LC_88 {
+
     public static int[] merge(int[] nums1, int m, int[] nums2, int n) {
         int i = 0;
         int j = 0;
@@ -30,9 +31,10 @@ public class LC_88 {
 
         return ans;
     }
+
     public static void main(String[] args) {
-        int[] arr1 = {1,2,3,0,0,0};
-        int[] arr2 = {2,5,6};
+        int[] arr1 = {1, 2, 7, 0, 0, 0};
+        int[] arr2 = {2, 5, 6};
         System.out.println(Arrays.toString(merge(arr1, 3, arr2, 3)));
     }
 }
