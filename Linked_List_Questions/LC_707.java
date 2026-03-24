@@ -1,4 +1,4 @@
-package Linked_List;
+package Linked_List_Questions;
 
 public class LC_707 {
     class Node {
