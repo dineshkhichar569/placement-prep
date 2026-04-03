@@ -7,17 +7,21 @@ public class LC_844 {
         Stack<Character> s1 = new Stack<>();
         Stack<Character> t1 = new Stack<>();
 
-        for (char i : s.toCharArray()) {
-            if (i == '#' && !s1.isEmpty()) {
-                s1.pop();
-            } else if (i != '#') {
+        for(char i : s.toCharArray()){
+            if(i == '#'){
+                if(!s1.isEmpty()){
+                    s1.pop();
+                }
+            } else {
                 s1.push(i);
             }
         }
-        for (char i : t.toCharArray()) {
-            if (i == '#' && !t1.isEmpty()) {
-                t1.pop();
-            } else if (i != '#') {
+        for(char i : t.toCharArray()){
+            if(i == '#'){
+                if(!t1.isEmpty()){
+                    t1.pop();
+                }
+            } else{
                 t1.push(i);
             }
         }
