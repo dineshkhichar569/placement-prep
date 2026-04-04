@@ -158,35 +158,35 @@ This repository is my **war room**. Every folder is a weapon, every file is a so
 
 ## 🧠 How I Solve Problems
 
-<div align="center">
+<div>
 
 ```
                     ┌──────────────┐
-                    │   📖 READ    │  Understand constraints, inputs, outputs
+                    │  📖 READ    │  Understand constraints, inputs, outputs
                     └──────┬───────┘
                            │
                     ┌──────▼───────┐
-                    │  🔍 PATTERN  │  Identify: is this DP? Greedy? Graph?
+                    │  🔍 PATTERN │  Identify: is this DP? Greedy? Graph?
                     └──────┬───────┘
                            │
                     ┌──────▼───────┐
-                    │  🪓 BRUTE    │  Solve it ugly first — just make it work
+                    │  🪓 BRUTE   │  Solve it ugly first — just make it work
                     └──────┬───────┘
                            │
                     ┌──────▼───────┐
-                    │  🚀 OPTIMIZE │  Apply known techniques, reduce complexity
+                    │ 🚀 OPTIMIZE │  Apply known techniques, reduce complexity
                     └──────┬───────┘
                            │
                     ┌──────▼───────┐
-                    │  ☕ CODE     │  Write clean, commented Java solution
+                    │  ☕ CODE    │  Write clean, commented Java solution
                     └──────┬───────┘
                            │
                     ┌──────▼───────┐
-                    │  🧪 TEST     │  Edge cases, dry run, submit
+                    │  🧪 TEST    │  Edge cases, dry run, submit
                     └──────┬───────┘
                            │
                     ┌──────▼───────┐
-                    │  📊 ANALYZE  │  Note O(time) and O(space)
+                    │  📊 ANALYZE │  Note O(time) and O(space)
                     └──────────────┘
 ```
 
@@ -214,10 +214,10 @@ This repository is my **war room**. Every folder is a weapon, every file is a so
   ╭────────────────────────────────────────────────────────────╮
   │                                                            │
   │   PRIMARY    →  Stack — Monotonic, Expression, Min Stack   │
-  │   SECONDARY  →  Arrays & Strings — revisiting optimals    │
+  │   SECONDARY  →  Arrays & Strings — revisiting optimals     │
   │   DAILY      →  2–3 problems / day                         │
-  │   MIX        →  60% Medium · 30% Easy · 10% Hard          │
-  │   PLATFORM   →  LeetCode (primary) · GFG (supplementary)  │
+  │   MIX        →  60% Medium · 30% Easy · 10% Hard           │
+  │   PLATFORM   →  LeetCode (primary) · GFG (supplementary)   │
   │                                                            │
   ╰────────────────────────────────────────────────────────────╯
 ```
@@ -282,14 +282,14 @@ PHASE 4 ▸ MOCK & REVISION
 ### 🏅 LeetCode Stats — Live
 
 <!-- LEETCODE STATS CARD — pulls live data from your profile -->
-<a href="https://leetcode.com/u/DineshSunny/"><img src="https://leetcard.jacoblin.cool/DineshSunny?theme=dark&font=JetBrains%20Mono&ext=heatmap&border=0&radius=20" width="75%" /></a>
+<a href="https://leetcode.com/u/DineshSunny/"><img src="https://leetcard.jacoblin.cool/DineshSunny?theme=dark&font=JetBrains%20Mono&ext=heatmap&border=0&radius=20" width="100%" /></a>
 
 <br/><br/>
 
 ### 📈 GitHub Activity
 
 <!-- GITHUB STATS — these render live on GitHub -->
-<img src="https://github-readme-stats.vercel.app/api?username=dineshkhichar569&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00ff87&text_color=a0aec0&ring_color=7c3aed" width="50%" />
+
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=dineshkhichar569&hide_border=true&background=0d1117&stroke=00d4ff&ring=7c3aed&fire=00ff87&currStreakLabel=00d4ff&sideLabels=00d4ff&currStreakNum=ffffff&sideNums=ffffff&dates=a0aec0" width="50%" />
 
 <br/><br/>
@@ -410,15 +410,13 @@ placement-prep/
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/DineshSunny/)
 &nbsp;
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-00C853?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/YOUR_GFG_USERNAME/)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-00C853?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/wollver962d/)
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dineshkhichar569)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dinesh-khichar-5265b4282/)
 
 </div>
-
-> 📌 *Replace `YOUR_GFG_USERNAME` and `YOUR_LINKEDIN` with your actual usernames.*
 
 <br/>
 
@@ -457,9 +455,9 @@ Found a better approach? Open a PR. Spotted a bug? File an issue. Want to grind 
   ║                                                           ║
   ║     Every problem solved is a step closer to the offer.   ║
   ║     Every commit is a day I chose discipline over rest.   ║
-  ║     Every topic mastered is a fear eliminated.             ║
+  ║     Every topic mastered is a fear eliminated.            ║
   ║                                                           ║
-  ║              The grind is the shortcut.                    ║
+  ║              The grind is the shortcut.                   ║
   ║                                                           ║
   ╚═══════════════════════════════════════════════════════════╝
 ```
