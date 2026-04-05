@@ -231,7 +231,7 @@ This repository is my **war room**. Every folder is a weapon, every file is a so
 ## 🛤️ Placement Preparation Strategy
 
 ```
-PHASE 1 ▸ FOUNDATION                                          ← YOU ARE HERE
+PHASE 1 ▸ FOUNDATION                                          
 ├── Arrays, Strings, Linked Lists, Stacks, Queues
 ├── Build raw problem-solving speed
 └── Target: 120+ problems
