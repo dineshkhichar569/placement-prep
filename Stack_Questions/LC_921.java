@@ -1,3 +1,4 @@
+package Stack_Questions;
 import java.util.Stack;
 
 public class LC_921 {
