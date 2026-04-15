@@ -1,7 +1,7 @@
 package Tree;
 
 public class LC_104 {
-    public static int maxDepth(TreeNode root) {
+    public static int maxDepth(_TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -13,7 +13,7 @@ public class LC_104 {
     }
 
     public static void main(String[] args) {
-        Binary_tree_root tree = new Binary_tree_root();
+        _Binary_tree_root tree = new _Binary_tree_root();
 
         Integer[] nodes = { 3, 9, 20, null, null, 15, 7 };
         tree.buildFromArray(nodes);

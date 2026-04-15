@@ -2,65 +2,25 @@ package Linked_List_Questions;
 
 public class LC_82 {
 
-    class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this.val = val;
-            this.next = null;
-        }
-    }
-
-    ListNode head;
-
-    // Add element at end
-    public void addLast(int val) {
-        ListNode newNode = new ListNode(val);
-
-        if (head == null) {
-            head = newNode;
-            return;
-        }
-
-        ListNode temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-
-        temp.next = newNode;
-    }
-
-    // Print linked list
-    public void printList(ListNode head) {
-        ListNode temp = head;
-        while (temp != null) {
-            System.out.print(temp.val + " -> ");
-            temp = temp.next;
-        }
-        System.out.println("null");
-    }
-
-    public ListNode deleteDuplicates(ListNode head) {
-        ListNode dummy = new ListNode(0);
-        ListNode prev = dummy;
-
+    public static _ListNode deleteDuplicates(_ListNode head) {
+        _ListNode dummy = new _ListNode(0);
         dummy.next = head;
-        ListNode curr = head;
+
+        _ListNode prev = dummy;
+        _ListNode curr = head;
 
         while (curr != null) {
             boolean duplicate = false;
 
-            // check duplicates
             while (curr.next != null && curr.val == curr.next.val) {
                 duplicate = true;
                 curr = curr.next;
             }
 
             if (duplicate) {
-                prev.next = curr.next; // skip all duplicates
+                prev.next = curr.next;
             } else {
-                prev = prev.next; // keep unique node
+                prev = prev.next;
             }
 
             curr = curr.next;
@@ -70,24 +30,17 @@ public class LC_82 {
     }
 
     public static void main(String[] args) {
-        LC_82 obj = new LC_82();
+        _linked_list_root list = new _linked_list_root();
 
-        // Add elements
-        obj.addLast(1);
-        obj.addLast(2);
-        obj.addLast(3);
-        obj.addLast(3);
-        obj.addLast(4);
-        obj.addLast(4);
-        obj.addLast(5);
+        int[] arr = {1, 2, 3, 3, 4, 4, 5};
+        list.buildFromArray(arr);
 
         System.out.print("Original List: ");
-        obj.printList(obj.head);
+        list.printList(list.getHead());
 
-        // Remove duplicates
-        ListNode result = obj.deleteDuplicates(obj.head);
+        _ListNode result = deleteDuplicates(list.getHead());
 
         System.out.print("After Removing Duplicates: ");
-        obj.printList(result);
+        list.printList(result);
     }
 }

@@ -7,9 +7,9 @@ public class BinaryTreeExample {
     public BinaryTreeExample() {
     }
 
-    private TreeNode root;
+    private _TreeNode root;
 
-    public TreeNode getRoot() {
+    public _TreeNode getRoot() {
         return root;
     }
 
@@ -17,17 +17,17 @@ public class BinaryTreeExample {
     public void populate(Scanner sc) {
         System.out.println("Enter the root Node: ");
         int value = sc.nextInt();
-        root = new TreeNode(value);
+        root = new _TreeNode(value);
         populate(sc, root);
     }
 
-    private void populate(Scanner sc, TreeNode node) {
+    private void populate(Scanner sc, _TreeNode node) {
         System.out.println("Do you want to enter left of : " + node.value);
         boolean left = sc.nextBoolean();
         if (left) {
             System.out.println("Enter the left of : " + node.value);
             int value = sc.nextInt();
-            node.left = new TreeNode(value);
+            node.left = new _TreeNode(value);
             populate(sc, node.left);
         }
 
@@ -36,7 +36,7 @@ public class BinaryTreeExample {
         if (right) {
             System.out.println("Enter the right of : " + node.value);
             int value = sc.nextInt();
-            node.right = new TreeNode(value);
+            node.right = new _TreeNode(value);
             populate(sc, node.right);
         }
     }
@@ -45,7 +45,7 @@ public class BinaryTreeExample {
         display(root, "");
     }
 
-    private void display(TreeNode node, String indent) {
+    private void display(_TreeNode node, String indent) {
         if (node == null) {
             return;
         }
