@@ -2,46 +2,41 @@ package Tree;
 
 import java.util.Scanner;
 
-public class BinaryTree {
-    
-    public BinaryTree(){}
-    
-    private static class Node{
-        int value;
-        Node left;
-        Node right;
+public class BinaryTreeExample {
 
-        public Node(int value){
-            this.value  = value;
-        }
+    public BinaryTreeExample() {
     }
 
-    private Node root;
+    private TreeNode root;
+
+    public TreeNode getRoot() {
+        return root;
+    }
 
     // insert elements
-    public void populate(Scanner sc){
+    public void populate(Scanner sc) {
         System.out.println("Enter the root Node: ");
         int value = sc.nextInt();
-        root = new Node(value);
+        root = new TreeNode(value);
         populate(sc, root);
     }
 
-    private void populate(Scanner sc, Node node){
+    private void populate(Scanner sc, TreeNode node) {
         System.out.println("Do you want to enter left of : " + node.value);
         boolean left = sc.nextBoolean();
-        if(left){
+        if (left) {
             System.out.println("Enter the left of : " + node.value);
             int value = sc.nextInt();
-            node.left = new Node(value);
+            node.left = new TreeNode(value);
             populate(sc, node.left);
         }
 
         System.out.println("Do you want to enter right of : " + node.value);
         boolean right = sc.nextBoolean();
-        if(right){
+        if (right) {
             System.out.println("Enter the right of : " + node.value);
             int value = sc.nextInt();
-            node.right = new Node(value);
+            node.right = new TreeNode(value);
             populate(sc, node.right);
         }
     }
@@ -50,8 +45,8 @@ public class BinaryTree {
         display(root, "");
     }
 
-    private void display(Node node, String indent){
-        if(node == null){
+    private void display(TreeNode node, String indent) {
+        if (node == null) {
             return;
         }
 
@@ -60,14 +55,11 @@ public class BinaryTree {
         display(node.right, indent + "\t");
     }
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinaryTree tree = new BinaryTree();
+        BinaryTreeExample tree = new BinaryTreeExample();
         tree.populate(sc);
         tree.display();
     }
-
-
 
 }
