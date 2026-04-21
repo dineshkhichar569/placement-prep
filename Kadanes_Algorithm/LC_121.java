@@ -1,9 +1,11 @@
 package Kadanes_Algorithm;
 
 public class LC_121 {
+
+    // Approach 1 //
     public static int maxProfit_1(int[] arr) {
         int maxProfit = Integer.MIN_VALUE;
-
+        
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] < arr[j]) {
@@ -12,27 +14,31 @@ public class LC_121 {
                 }
             }
         }
-
+        
         if (maxProfit < 0) {
             maxProfit = 0;
         }
-
+        
         return maxProfit;
     }
+    
 
+    // Approach 2 //
     public static int maxProfit_2(int[] arr) {
         int min = arr[0];
         int maxProfit = 0;
-
+        
         for (int i = 0; i < arr.length; i++) {
             min = Math.min(min, arr[i]);
             int profit = arr[i] - min;
             maxProfit = Math.max(profit, maxProfit);
         }
-
+        
         return maxProfit;
     }
+    
 
+    // Approach 3 //
     public static int maxProfit_3(int[] prices) {
         int buy = 0;
         int sell = 1;
